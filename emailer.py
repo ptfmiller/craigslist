@@ -11,4 +11,4 @@ def sendMail(inputList):
             mailBody = mailBody + itemString
         mailBody = mailBody + '\nLove,\nPhil'
         conn = boto.ses.connect_to_region('us-east-1')
-        conn.send_email('ptfmiller@gmail.com', 'New craigslist post(s)', mailBody, ['ptfmiller@gmail.com', 'jamieelizabethmiller@gmail.com])
+        conn.send_email('ptfmiller@gmail.com', 'New craigslist post(s)', mailBody, ['ptfmiller@gmail.com', 'jamieelizabethmiller@gmail.com'])
